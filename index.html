@@ -1,0 +1,1766 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Home</title>
+	<link rel="stylesheet" href="css/app.min.css">
+</head>
+
+<body>
+	<div id="pointer"></div>
+	<!-- section-navbar -->
+	<input type="checkbox" id="burger" class="burger" />
+	<nav class="nav-block" data-scroll data-scroll-sticky data-scroll-target=".scroller">
+		<div class="nav-block__content-min">
+			<a href="" class="nav-block__logo">
+				<img src="img/logo.svg" alt="" class="nav-block__logo-icon" />
+			</a>
+			<label for="burger" class="burger-label">
+				<div class="burger-icon"></div>
+			</label>
+			<a href="" class="nav-block__call event_call" data-gtag-click="phone_call">
+				<img src="img/svg/phone.svg" alt="" class="nav-block__call-icon" />
+			</a>
+		</div>
+		<div class="nav-block__content">
+			<a href="" class="nav-block__logo-full"><img src="img/logo-full.svg" alt=""
+					class="nav-block__logo-full-img" /></a>
+			<div class="nav-block__close">
+				<svg class="nav-block__close-icon" width="55" height="55" viewBox="0 0 55 55" fill="none"
+					xmlns="http://www.w3.org/2000/svg">
+					<circle cx="27.5" cy="27.5" r="27.5" fill="white" />
+					<path d="M18.8182 18L37 36.1818L35.1818 38L17 19.8182L18.8182 18Z" fill="#D9AA92" />
+					<path d="M17 36.1818L35.1818 18L37 19.8182L18.8182 38L17 36.1818Z" fill="#D9AA92" />
+				</svg>
+
+			</div>
+			<ul class="nav-block__list">
+				<li class="nav-block__list-item"><a href="#info" class="nav-block__list-link main-text">About</a>
+				</li>
+				<li class="nav-block__list-item"><a href="#key" class="nav-block__list-link main-text">Key
+						features</a></li>
+				<li class="nav-block__list-item"><a href="#floorplans" class="nav-block__list-link main-text">Floor
+						plans</a></li>
+				<li class="nav-block__list-item"><a href="#rooms" class="nav-block__list-link main-text">Buy with
+						us</a></li>
+				<li class="nav-block__list-item"><a href="#gallery" class="nav-block__list-link main-text">Gallery</a>
+				</li>
+				<li class="nav-block__list-item"><a href="#location" class="nav-block__list-link main-text">Location</a>
+				</li>
+				<li class="nav-block__list-item"><a href="#payment" class="nav-block__list-link main-text">Payment
+						plan</a></li>
+				<li class="nav-block__list-item"><a href="#request" class="nav-block__list-link main-text">Special
+						offer</a></li>
+			</ul>
+			<p class="nav-block__tel event_call phone-replace" data-gtag-click="phone_call">+971 56
+				<span>xxx-xx-xx</span>
+			</p>
+		</div>
+	</nav>
+	<!-- section-preloader -->
+	<div id="page-preloader" class="preloader">
+		<div class="preloader__row">
+			<svg id="buildings" width="515" height="252" viewBox="0 0 515 252" fill="none"
+				xmlns="http://www.w3.org/2000/svg">
+				<defs>
+					<path id="wordPath"
+						d="M77.8938 243.927C71.239 243.927 64.4752 243.218 57.6022 241.8C50.7292 240.491 43.9654 238.691 37.3106 236.4C30.6559 234 24.2193 231.218 18.0009 228.054C11.7825 224.781 5.94595 221.345 0.491222 217.745L5.8914 208.253C10.5825 211.417 15.819 214.472 21.601 217.417C27.383 220.363 33.3832 222.981 39.6016 225.272C45.9291 227.563 52.3657 229.418 58.9113 230.836C65.5661 232.145 72.0027 232.8 78.2211 232.8C86.9486 232.8 94.8034 231.654 101.785 229.363C108.768 227.072 114.713 223.909 119.622 219.872C124.532 215.726 128.295 210.817 130.914 205.144C133.641 199.362 135.005 193.035 135.005 186.162C135.005 180.053 133.75 174.434 131.241 169.307C128.732 164.179 125.023 159.325 120.113 154.743C115.204 150.161 109.149 145.742 101.949 141.488C94.7489 137.233 86.5122 132.978 77.2392 128.724C68.4026 124.578 59.8932 120.269 51.7111 115.796C43.6381 111.214 36.4379 106.196 30.1104 100.741C23.892 95.177 18.8736 89.0132 15.0553 82.2493C11.3461 75.3764 9.49152 67.5761 9.49152 58.8486C9.49152 50.0119 11.2916 42.048 14.8917 34.9569C18.6009 27.7566 23.7284 21.6473 30.274 16.629C36.9288 11.6106 44.8381 7.73779 54.0021 5.01042C63.2751 2.28306 73.53 0.91938 84.7667 0.91938C96.9853 0.91938 108.822 2.82853 120.277 6.64684C131.841 10.4651 142.15 15.6471 151.205 22.1928L145.641 31.684C136.805 25.4656 127.15 20.6655 116.677 17.2836C106.204 13.7925 95.0762 12.047 83.294 12.047C76.0937 12.047 69.4935 13.0289 63.4933 14.9926C57.4931 16.9563 52.3111 19.7382 47.9473 23.3383C43.5836 26.8293 40.1471 31.0295 37.6379 35.9387C35.2378 40.7389 34.0378 46.0845 34.0378 51.9756C34.0378 58.0849 35.6197 63.6487 38.7834 68.6671C41.9471 73.5763 46.2018 78.2128 51.5475 82.5766C56.8931 86.8313 63.1115 90.8678 70.2026 94.6861C77.4029 98.5044 84.9849 102.268 92.9488 105.977C103.422 110.887 112.749 115.85 120.932 120.869C129.223 125.887 136.205 131.287 141.878 137.069C147.66 142.851 152.078 149.179 155.133 156.052C158.187 162.816 159.715 170.507 159.715 179.125C159.715 188.944 157.696 197.89 153.66 205.963C149.623 213.926 143.951 220.745 136.641 226.418C129.441 231.982 120.822 236.291 110.786 239.345C100.749 242.4 89.7851 243.927 77.8938 243.927ZM201.28 4.5195H228.935V228.872H333.993V240H201.28V4.5195ZM424.16 243.927C417.505 243.927 410.741 243.218 403.868 241.8C396.995 240.491 390.231 238.691 383.577 236.4C376.922 234 370.485 231.218 364.267 228.054C358.048 224.781 352.212 221.345 346.757 217.745L352.157 208.253C356.848 211.417 362.085 214.472 367.867 217.417C373.649 220.363 379.649 222.981 385.868 225.272C392.195 227.563 398.632 229.418 405.177 230.836C411.832 232.145 418.269 232.8 424.487 232.8C433.215 232.8 441.069 231.654 448.051 229.363C455.034 227.072 460.979 223.909 465.888 219.872C470.798 215.726 474.561 210.817 477.18 205.144C479.907 199.362 481.271 193.035 481.271 186.162C481.271 180.053 480.016 174.434 477.507 169.307C474.998 164.179 471.289 159.325 466.379 154.743C461.47 150.161 455.415 145.742 448.215 141.488C441.015 137.233 432.778 132.978 423.505 128.724C414.669 124.578 406.159 120.269 397.977 115.796C389.904 111.214 382.704 106.196 376.376 100.741C370.158 95.177 365.14 89.0132 361.321 82.2493C357.612 75.3764 355.758 67.5761 355.758 58.8486C355.758 50.0119 357.558 42.048 361.158 34.9569C364.867 27.7566 369.994 21.6473 376.54 16.629C383.195 11.6106 391.104 7.73779 400.268 5.01042C409.541 2.28306 419.796 0.91938 431.033 0.91938C443.251 0.91938 455.088 2.82853 466.543 6.64684C478.107 10.4651 488.416 15.6471 497.471 22.1928L491.907 31.684C483.071 25.4656 473.416 20.6655 462.943 17.2836C452.47 13.7925 441.342 12.047 429.56 12.047C422.36 12.047 415.759 13.0289 409.759 14.9926C403.759 16.9563 398.577 19.7382 394.213 23.3383C389.85 26.8293 386.413 31.0295 383.904 35.9387C381.504 40.7389 380.304 46.0845 380.304 51.9756C380.304 58.0849 381.886 63.6487 385.049 68.6671C388.213 73.5763 392.468 78.2128 397.813 82.5766C403.159 86.8313 409.377 90.8678 416.469 94.6861C423.669 98.5044 431.251 102.268 439.215 105.977C449.688 110.887 459.015 115.85 467.198 120.869C475.489 125.887 482.471 131.287 488.144 137.069C493.926 142.851 498.344 149.179 501.399 156.052C504.453 162.816 505.981 170.507 505.981 179.125C505.981 188.944 503.962 197.89 499.926 205.963C495.889 213.926 490.216 220.745 482.907 226.418C475.707 231.982 467.088 236.291 457.052 239.345C447.015 242.4 436.051 243.927 424.16 243.927Z"/>
+					<mask id="loaderMask">
+						<use href="#wordPath" fill="#D8BDAF" />
+					</mask>
+				</defs>
+				<g mask="url(#loaderMask)">
+					<rect id="rectAnimation" x="0" y="0" width="100%"
+						height="100%" fill="#D8BDAF" />
+					<use href="#wordPath" stroke="#D8BDAF" stroke-width="4" />
+				</g>
+			</svg>
+		</div>
+	</div>
+	<div class="swiper app mySwiper">
+		<div class="swiper-wrapper">
+			<header class="swiper-slide">
+				<div class="main-banner section">
+					<div class="main-banner__video">
+						<video autoplay playsinline muted loop>
+							<source src="video/banner-video.mp4" type="video/mp4" />
+						</video>
+						<h2 class="main-banner__title">w Downtown</h2>
+						<div class="main__scroll-down">
+							<p>Scroll</p>
+							<svg id="arrow-anim" width="24" height="38" viewBox="0 0 24 38" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path class="oval"
+									d="M11.9704 0C5.80708 0 0.792969 5.01411 0.792969 11.1775V26.8225C0.792969 32.9859 5.80708 38 11.9704 38C18.1338 38 23.1479 32.9859 23.1479 26.8225V11.1775C23.1479 5.01411 18.1338 0 11.9704 0ZM20.868 26.8225C20.868 31.7285 16.8764 35.7201 11.9704 35.7201C7.06445 35.7201 3.07288 31.7285 3.07288 26.8225V11.1775C3.07288 6.27148 7.06445 2.27991 11.9704 2.27991C16.8764 2.27991 20.868 6.27148 20.868 11.1775V26.8225Z"
+									fill="white" />
+								<path class="arrow"
+									d="M11.9708 7.55908C11.3411 7.55908 10.8308 8.06934 10.8308 8.69904V13.946C10.8308 14.5754 11.3411 15.0859 11.9708 15.0859C12.6002 15.0859 13.1107 14.5754 13.1107 13.946V8.69904C13.1107 8.06934 12.6005 7.55908 11.9708 7.55908Z"
+									fill="white" />
+							</svg>
+						</div>
+					</div>
+				</div>
+			</header>
+			<!-- section-about -->
+			<section class="swiper-slide main-about">
+				<div class="main-about__img">
+					<img src="img/banner-1.jpg" alt="">
+					<div class="main-about__headline">
+						<h2 class="main-about__title">WELCOME TO YOUR HOME AT THE
+							W RESIDENCES DUBAI – DOWNTOWN</h2>
+					</div>
+					<div class="main__scroll-down">
+						<p>Scroll</p>
+						<svg id="arrow-anim" width="24" height="38" viewBox="0 0 24 38" fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<path class="oval"
+								d="M11.9704 0C5.80708 0 0.792969 5.01411 0.792969 11.1775V26.8225C0.792969 32.9859 5.80708 38 11.9704 38C18.1338 38 23.1479 32.9859 23.1479 26.8225V11.1775C23.1479 5.01411 18.1338 0 11.9704 0ZM20.868 26.8225C20.868 31.7285 16.8764 35.7201 11.9704 35.7201C7.06445 35.7201 3.07288 31.7285 3.07288 26.8225V11.1775C3.07288 6.27148 7.06445 2.27991 11.9704 2.27991C16.8764 2.27991 20.868 6.27148 20.868 11.1775V26.8225Z"
+								fill="white" />
+							<path class="arrow"
+								d="M11.9708 7.55908C11.3411 7.55908 10.8308 8.06934 10.8308 8.69904V13.946C10.8308 14.5754 11.3411 15.0859 11.9708 15.0859C12.6002 15.0859 13.1107 14.5754 13.1107 13.946V8.69904C13.1107 8.06934 12.6005 7.55908 11.9708 7.55908Z"
+								fill="white" />
+						</svg>
+					</div>
+				</div>
+			</section>
+			<!-- section-sliders -->
+			<section class="swiper-slide main-sliders">
+				<div class="mask"></div>
+				<div class="swiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="swiper-slide__body">
+								<div class="swiper-slide__body-text" data-swiper-parallax="+300">
+									<p>Stunning views of the Burj Khalifa, along with the Dubai Mall and the Dancing
+										Fountains, are just a few feet away</p>
+								</div>
+								<div class="swiper-slide__body-img">
+									<img src="img/slide/slide-1.jpg" alt="" data-swiper-parallax="+300">
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="swiper-slide__body">
+								<div class="swiper-slide__body-text">
+									<p>A 49-storey vertical tower with 384 exquisite-luxury residences</p>
+								</div>
+								<div class="swiper-slide__body-img">
+									<img src="img/slide/slide-2.jpg" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="swiper-slide__body">
+								<div class="swiper-slide__body-text">
+									<p>Advanced fitness center with expert trainers that offers a wide range of
+										workouts,
+										from strength training and athletics to a range of activities</p>
+								</div>
+								<div class="swiper-slide__body-img">
+									<img src="img/slide/slide-3.jpg" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="swiper-slide__body">
+								<div class="swiper-slide__body-text">
+									<p>A VIP lounge where new connections spark in front of a signature cocktail or a
+										gourmet lunch</p>
+								</div>
+								<div class="swiper-slide__body-img">
+									<img src="img/slide/slide-4.jpg" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="swiper-slide__body">
+								<div class="swiper-slide__body-text">
+									<p>Media Room with a private cinema, gaming area, and a chill zone</p>
+								</div>
+								<div class="swiper-slide__body-img">
+									<img src="img/slide/slide-5.jpg" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="swiper-slide__body">
+								<div class="swiper-slide__body-text">
+									<p>Enjoy an infinity pool overlooking the world's tallest building, Burj Khalifa
+									</p>
+								</div>
+								<div class="swiper-slide__body-img">
+									<img src="img/slide/slide-6.jpg" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="forSwiper" data-swiper-parallax="+300">
+						<button class="btn">
+							<svg width="50" height="51" viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M17 25.9983L28 16.9983L28 34.9983L17 25.9983Z" fill="#D9AA92" />
+								<rect x="49" y="49.9983" width="48" height="48" rx="24" transform="rotate(-180 49 49.9983)"
+									stroke="#D9AA92" stroke-width="2" />
+							</svg>
+						</button>
+						<button class="btn">
+							<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M33 25L22 34L22 16L33 25Z" fill="#D9AA92" />
+								<rect x="1" y="1" width="48" height="48" rx="24" stroke="#D9AA92" stroke-width="2" />
+							</svg>
+						</button>
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
+			</section>
+			<!-- section-brochure -->
+			<section class="swiper-slide">
+				<div class="main-payment-plan">
+					<div class="main-brochure section-dark">
+						<h2 class="main-title" data-swiper-parallax="+300">Brochure describing all the<br /> unique
+							features
+							of
+							the
+							area,
+							which includes:
+						</h2>
+	
+						<svg id="main-brochure__oval" width="1179" height="1179" viewBox="0 0 1179 1179" fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<circle id="oval-1" class="svg-elem-1" opacity="0.3" cx="589.233" cy="589.233" r="588.733"
+								transform="rotate(-360 589.233 589.233)" stroke="white" />
+							<circle id="oval-2" class="svg-elem-2" opacity="0.2" cx="620.008" cy="640.174" r="535.786"
+								transform="rotate(-360 620.008 640.174)" stroke="white" />
+							<circle id="oval-3" class="svg-elem-3" opacity="0.1" cx="620.514" cy="639.443" r="450.75"
+								transform="rotate(-360 620.514 639.443)" stroke="white" />
+							<text id="oval-1-1" class="main-brochure__oval-text" x="131.122" y="136.124">Lifestyle</text>
+							<text id="oval-1-2" class="main-brochure__oval-text" x="284.078" y="241.138">Photos</text>
+							<text id="oval-1-3" class="main-brochure__oval-text" x="418.032" y="89.124">Masterplan</text>
+							<text id="oval-1-4" class="main-brochure__oval-text" x="684.968" y="194.117">
+								<tspan x="651.968" y="127.117">Projec's</tspan>
+								<tspan x="640.968" y="157.117">highlights</tspan>
+							</text>
+							<g id="oval-1-1" filter="url(#filter0_d_303_3)">
+								<circle cx="684.968" cy="194.117" r="8.49743" fill="#D9AA92" />
+							</g>
+							<g id="oval-1-2" filter="url(#filter1_d_303_3)">
+								<circle cx="474.032" cy="126.138" r="8.49743" fill="#D9AA92" />
+							</g>
+							<g id="oval-1-3" filter="url(#filter2_d_303_3)">
+								<circle cx="172.122" cy="171.124" r="8.49743" fill="#D9AA92" />
+							</g>
+							<g id="oval-1-4" filter="url(#filter3_d_303_3)">
+								<circle cx="319.078" cy="196.116" r="8.49743" fill="#D9AA92" />
+							</g>
+							<defs>
+								<filter id="filter0_d_303_3" x="647.471" y="157.62" width="74.9951" height="74.9946"
+									filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+									<feFlood flood-opacity="0" result="BackgroundImageFix" />
+									<feColorMatrix in="SourceAlpha" type="matrix"
+										values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+									<feOffset dy="1" />
+									<feGaussianBlur stdDeviation="14.5" />
+									<feComposite in2="hardAlpha" operator="out" />
+									<feColorMatrix type="matrix"
+										values="0 0 0 0 0.701961 0 0 0 0 0.501961 0 0 0 0 0.403922 0 0 0 1 0" />
+									<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_303_3" />
+									<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_303_3"
+										result="shape" />
+								</filter>
+								<filter id="filter1_d_303_3" x="436.534" y="89.6401" width="74.9951" height="74.9946"
+									filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+									<feFlood flood-opacity="0" result="BackgroundImageFix" />
+									<feColorMatrix in="SourceAlpha" type="matrix"
+										values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+									<feOffset dy="1" />
+									<feGaussianBlur stdDeviation="14.5" />
+									<feComposite in2="hardAlpha" operator="out" />
+									<feColorMatrix type="matrix"
+										values="0 0 0 0 0.701961 0 0 0 0 0.501961 0 0 0 0 0.403922 0 0 0 1 0" />
+									<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_303_3" />
+									<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_303_3"
+										result="shape" />
+								</filter>
+								<filter id="filter2_d_303_3" x="134.625" y="134.626" width="74.9951" height="74.9946"
+									filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+									<feFlood flood-opacity="0" result="BackgroundImageFix" />
+									<feColorMatrix in="SourceAlpha" type="matrix"
+										values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+									<feOffset dy="1" />
+									<feGaussianBlur stdDeviation="14.5" />
+									<feComposite in2="hardAlpha" operator="out" />
+									<feColorMatrix type="matrix"
+										values="0 0 0 0 0.701961 0 0 0 0 0.501961 0 0 0 0 0.403922 0 0 0 1 0" />
+									<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_303_3" />
+									<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_303_3"
+										result="shape" />
+								</filter>
+								<filter id="filter3_d_303_3" x="281.581" y="159.619" width="74.9951" height="74.9946"
+									filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+									<feFlood flood-opacity="0" result="BackgroundImageFix" />
+									<feColorMatrix in="SourceAlpha" type="matrix"
+										values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+									<feOffset dy="1" />
+									<feGaussianBlur stdDeviation="14.5" />
+									<feComposite in2="hardAlpha" operator="out" />
+									<feColorMatrix type="matrix"
+										values="0 0 0 0 0.701961 0 0 0 0 0.501961 0 0 0 0 0.403922 0 0 0 1 0" />
+									<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_303_3" />
+									<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_303_3"
+										result="shape" />
+								</filter>
+							</defs>
+						</svg>
+						<div class="main-brochure__list-mobile">
+							<div>
+								<div class="main-brochure__list-item">
+									<svg width="20" height="20" viewBox="0 0 25 25" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M25 12.5C25 19.4036 19.4036 25 12.5 25C5.59644 25 0 19.4036 0 12.5C0 5.59644 5.59644 0 12.5 0C19.4036 0 25 5.59644 25 12.5Z"
+											fill="#D9AA92" />
+									</svg>
+									<p>Lifestyle</p>
+								</div>
+								<div class="main-brochure__list-item">
+									<svg width="20" height="20" viewBox="0 0 25 25" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M25 12.5C25 19.4036 19.4036 25 12.5 25C5.59644 25 0 19.4036 0 12.5C0 5.59644 5.59644 0 12.5 0C19.4036 0 25 5.59644 25 12.5Z"
+											fill="#D9AA92" />
+									</svg>
+									<p>Photos</p>
+								</div>
+							</div>
+							<div>
+								<div class="main-brochure__list-item">
+									<svg width="20" height="20" viewBox="0 0 25 25" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M25 12.5C25 19.4036 19.4036 25 12.5 25C5.59644 25 0 19.4036 0 12.5C0 5.59644 5.59644 0 12.5 0C19.4036 0 25 5.59644 25 12.5Z"
+											fill="#D9AA92" />
+									</svg>
+									<p>Masterplan</p>
+								</div>
+								<div class="main-brochure__list-item">
+									<svg width="20" height="20" viewBox="0 0 25 25" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M25 12.5C25 19.4036 19.4036 25 12.5 25C5.59644 25 0 19.4036 0 12.5C0 5.59644 5.59644 0 12.5 0C19.4036 0 25 5.59644 25 12.5Z"
+											fill="#D9AA92" />
+									</svg>
+									<p>Projec's highlights</p>
+								</div>
+							</div>
+						</div>
+						<div class="main-brochure__img">
+							<img src="img/main-brochure.png" alt="">
+						</div>
+						<!-- section-download-brochure -->
+						<div class="main-brochure__form download-brochure-form">
+							<h6 class="download-brochure-form__title">download brochure in one click</h6>
+							<form action="{% url 'form_receiver' %}" method="post" class="download-brochure-form__form"
+								data-gtag-submit="download_brochure">
+								<div class="download-brochure-form__block">
+									<div class="download-brochure-form__input">
+										<input class="download-brochure-__form-control" type="text" name="name"
+											placeholder="Your name" required>
+									</div>
+									<div class="download-brochure-form__input">
+										<input class="download-brochure-__form-control" type="tel" name="phone"
+											pattern="[+]?[0-9].{8,15}$" placeholder="Phone number" required>
+									</div>
+									<div class="download-brochure-form__input">
+										<input class="download-brochure-__form-control" type="email" name="email"
+											pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Your email"
+											required>
+									</div>
+									<input type="hidden" name="description" value="page_form">
+									<input type="hidden" name="duration" class="duration" value="">
+									<input type="hidden" name="pasted_fields" class="pasted_fields" value="">
+									<input type="hidden" name="language" value="english">
+									<div class="download-brochure-form__btn-item">
+										<button class="download-brochure-form__btn btn" type="submit">Download
+											PDF</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- section-location -->
+			<section class="swiper-slide main-location section-dark ">
+				<h2 class="main-headline main-location-title">Location</h2>
+				<div class="swiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="slide-body">
+								<div class="main-location__img">
+									<img src="img/main-location-1.jpg" alt="">
+									<div class="main-lolcation__img-markers-1">
+									</div>
+								</div>
+								<div class="main-location__card-mins__bottom">
+									<div class="main-location__card-mins">
+										<div class="card-mins__block">
+											<div class="card-mins__title">6</div>
+											<div class="card-mins__text">mins drive to <br />
+												the Dubai Opera</div>
+										</div>
+									</div>
+								</div>
+								<div class="forSwiper">
+									<button class="btn">
+										<svg width="50" height="51" viewBox="0 0 50 51" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path d="M17 25.9983L28 16.9983L28 34.9983L17 25.9983Z" fill="white" />
+											<rect x="49" y="49.9983" width="48" height="48" rx="24"
+												transform="rotate(-180 49 49.9983)" stroke="white" stroke-width="2" />
+										</svg>
+									</button>
+									<button class="btn">
+										<svg width="50" height="50" viewBox="0 0 50 50" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path d="M33 25L22 34L22 16L33 25Z" fill="white" />
+											<rect x="1" y="1" width="48" height="48" rx="24" stroke="white"
+												stroke-width="2" />
+										</svg>
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="slide-body">
+								<div class="main-location__img">
+									<img src="img/main-location-2.jpg" alt="">
+									<div class="main-lolcation__img-markers-2">
+									</div>
+								</div>
+								<div class="main-location__card-mins__bottom">
+									<div class="main-location__card-mins">
+										<div class="card-mins__block">
+											<div class="card-mins__title">6</div>
+											<div class="card-mins__text">mins drive to <br />
+												the Dubai Mall</div>
+										</div>
+									</div>
+								</div>
+								<div class="forSwiper">
+									<button class="btn">
+										<svg width="50" height="51" viewBox="0 0 50 51" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path d="M17 25.9983L28 16.9983L28 34.9983L17 25.9983Z" fill="white" />
+											<rect x="49" y="49.9983" width="48" height="48" rx="24"
+												transform="rotate(-180 49 49.9983)" stroke="white" stroke-width="2" />
+										</svg>
+									</button>
+									<button class="btn">
+										<svg width="50" height="50" viewBox="0 0 50 50" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path d="M33 25L22 34L22 16L33 25Z" fill="white" />
+											<rect x="1" y="1" width="48" height="48" rx="24" stroke="white"
+												stroke-width="2" />
+										</svg>
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="slide-body">
+								<div class="main-location__img">
+									<img src="img/main-location-3.jpg" alt="">
+									<div class="main-lolcation__img-markers-3">
+									</div>
+								</div>
+								<div class="main-location__card-mins__bottom">
+									<div class="main-location__card-mins">
+										<div class="card-mins__block">
+											<div class="card-mins__title">5</div>
+											<div class="card-mins__text">mins drive to <br />
+												the Burj Khalifa</div>
+										</div>
+									</div>
+								</div>
+								<div class="forSwiper">
+									<button class="btn">
+										<svg width="50" height="51" viewBox="0 0 50 51" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path d="M17 25.9983L28 16.9983L28 34.9983L17 25.9983Z" fill="white" />
+											<rect x="49" y="49.9983" width="48" height="48" rx="24"
+												transform="rotate(-180 49 49.9983)" stroke="white" stroke-width="2" />
+										</svg>
+									</button>
+									<button class="btn">
+										<svg width="50" height="50" viewBox="0 0 50 50" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path d="M33 25L22 34L22 16L33 25Z" fill="white" />
+											<rect x="1" y="1" width="48" height="48" rx="24" stroke="white"
+												stroke-width="2" />
+										</svg>
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="slide-body">
+								<div class="main-location__img">
+									<img src="img/main-location-4.jpg" alt="">
+									<div class="main-lolcation__img-markers-4">
+									</div>
+								</div>
+								<div class="main-location__card-mins__bottom">
+									<div class="main-location__card-mins">
+										<div class="card-mins__block">
+											<div class="card-mins__title">4</div>
+											<div class="card-mins__text">mins drive to <br />
+												the Dubai Fountain</div>
+										</div>
+									</div>
+								</div>
+								<div class="forSwiper">
+									<button class="btn">
+										<svg width="50" height="51" viewBox="0 0 50 51" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path d="M17 25.9983L28 16.9983L28 34.9983L17 25.9983Z" fill="white" />
+											<rect x="49" y="49.9983" width="48" height="48" rx="24"
+												transform="rotate(-180 49 49.9983)" stroke="white" stroke-width="2" />
+										</svg>
+									</button>
+									<button class="btn">
+										<svg width="50" height="50" viewBox="0 0 50 50" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path d="M33 25L22 34L22 16L33 25Z" fill="white" />
+											<rect x="1" y="1" width="48" height="48" rx="24" stroke="white"
+												stroke-width="2" />
+										</svg>
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="slide-body">
+								<div class="main-location__img">
+									<img src="img/main-location-5.jpg" alt="">
+									<div class="main-lolcation__img-markers-5">
+									</div>
+								</div>
+								<div class="main-location__card-mins__bottom">
+									<div class="main-location__card-mins">
+										<div class="card-mins__block">
+											<div class="card-mins__title">3</div>
+											<div class="card-mins__text">mins drive to <br />
+												the Dubai Canal</div>
+										</div>
+									</div>
+								</div>
+								<div class="forSwiper">
+									<button class="btn">
+										<svg width="50" height="51" viewBox="0 0 50 51" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path d="M17 25.9983L28 16.9983L28 34.9983L17 25.9983Z" fill="white" />
+											<rect x="49" y="49.9983" width="48" height="48" rx="24"
+												transform="rotate(-180 49 49.9983)" stroke="white" stroke-width="2" />
+										</svg>
+									</button>
+									<button class="btn">
+										<svg width="50" height="50" viewBox="0 0 50 50" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path d="M33 25L22 34L22 16L33 25Z" fill="white" />
+											<rect x="1" y="1" width="48" height="48" rx="24" stroke="white"
+												stroke-width="2" />
+										</svg>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- section-gallery -->
+			<section class="swiper-slide main-gallery section-dark main-center">
+				<div class="main-gallery__title-img" data-swiper-parallax="+100">
+					<img src="img/title-gallery.png" alt="">
+				</div>
+				<div class="main-gallery__container container">
+					<ul class="nav nav-pills main-gallery__nav mb-3" id="pills-gallery-tab" role="tablist">
+						<li class="nav-item main-gallery__tabs" role="presentation">
+							<button class="main-gallery__btn active" id="pills-exterior-tab" data-bs-toggle="pill"
+								data-bs-target="#pills-exterior" type="button" role="tab" aria-controls="pills-exterior"
+								aria-selected="true">Exterior</button>
+						</li>
+						<li class="nav-item " role="presentation">
+							<button class="main-gallery__btn main-gallery__tabs" id="pills-interior-tab"
+								data-bs-toggle="pill" data-bs-target="#pills-interior" type="button" role="tab"
+								aria-controls="pills-interior" aria-selected="false">Interior</button>
+						</li>
+						<li class="nav-item main-gallery__tabs" role="presentation">
+							<button class="main-gallery__btn" id="pills-video-tab" data-bs-toggle="pill"
+								data-bs-target="#pills-video" type="button" role="tab" aria-controls="pills-video"
+								aria-selected="false">Video</button>
+						</li>
+					</ul>
+					<div class="tab-content lg-list" id="pills-gallery-tabContent">
+						<div class="tab-pane fade show active" id="pills-exterior" role="tabsection"
+							aria-labelledby="pills-exterior-tab">
+							<div class="swiper">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<div class="container">
+											<div class="main-gallery__slide lg-item" data-src="img/gallery-1-1.jpg">
+												<img src="img/gallery-1-1.jpg" alt="">
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="container">
+											<div class="main-gallery__slide lg-item" data-src="img/gallery-1-1.jpg">
+												<img src="img/gallery-1-2.jpg" alt="">
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="container">
+											<div class="main-gallery__slide lg-item" data-src="img/gallery-1-1.jpg">
+												<img src="img/gallery-1-3.jpg" alt="">
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="container">
+											<div class="main-gallery__slide lg-item" data-src="img/gallery-1-1.jpg">
+												<img src="img/gallery-1-4.jpg" alt="">
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="container">
+											<div class="main-gallery__slide lg-item" data-src="img/gallery-1-1.jpg">
+												<img src="img/gallery-1-5.jpg" alt="">
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="container">
+											<div class="main-gallery__slide lg-item" data-src="img/gallery-1-1.jpg">
+												<img src="img/gallery-1-6.jpg" alt="">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="forSwiper">
+									<div class="forSwiper-btn swiper-button-prev">
+										<svg width="50" height="51" viewBox="0 0 50 51" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path d="M17 25.9983L28 16.9983L28 34.9983L17 25.9983Z" fill="#D0906F" />
+											<rect x="49" y="49.9983" width="48" height="48" rx="24"
+												transform="rotate(-180 49 49.9983)" stroke="#D0906F" stroke-width="2" />
+										</svg>
+									</div>
+									<div class="forSwiper-btn swiper-button-next">
+										<svg width="50" height="50" viewBox="0 0 50 50" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path d="M33 25L22 34L22 16L33 25Z" fill="#D0906F" />
+											<rect x="1" y="1" width="48" height="48" rx="24" stroke="#D0906F"
+												stroke-width="2" />
+										</svg>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="pills-interior" role="tabsection"
+							aria-labelledby="pills-interior-tab">
+							<div class="swiper">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<div class="container">
+											<div class="main-gallery__slide lg-item" data-src="img/gallery-2-1.jpg">
+												<img src="img/gallery-2-1.jpg" alt="">
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="container">
+											<div class="main-gallery__slide lg-item" data-src="img/gallery-2-2.jpg">
+												<img src="img/gallery-2-2.jpg" alt="">
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="container">
+											<div class="main-gallery__slide lg-item" data-src="img/gallery-2-2.jpg">
+												<img src="img/gallery-2-3.jpg" alt="">
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="container">
+											<div class="main-gallery__slide lg-item" data-src="img/gallery-2-2.jpg">
+												<img src="img/gallery-2-4.jpg" alt="">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="forSwiper">
+									<div class="forSwiper-btn swiper-button-prev">
+										<svg width="50" height="51" viewBox="0 0 50 51" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path d="M17 25.9983L28 16.9983L28 34.9983L17 25.9983Z" fill="#D0906F" />
+											<rect x="49" y="49.9983" width="48" height="48" rx="24"
+												transform="rotate(-180 49 49.9983)" stroke="#D0906F" stroke-width="2" />
+										</svg>
+									</div>
+									<div class="forSwiper-btn swiper-button-next">
+										<svg width="50" height="50" viewBox="0 0 50 50" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path d="M33 25L22 34L22 16L33 25Z" fill="#D0906F" />
+											<rect x="1" y="1" width="48" height="48" rx="24" stroke="#D0906F"
+												stroke-width="2" />
+										</svg>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane fade lg-list" id="pills-video" role="tabsection"
+							aria-labelledby="pills-video-tab">
+							<div class="container">
+								<div data-src="https://www.youtube.com/watch?v=ZECVixfrTwA&t=6s"
+									data-poster="img/gallery-3-1.jpg" class="main-gallery__slide lg-item">
+									<img src="img/gallery-3-1.jpg" alt="">
+									<div class="batch-video">
+										<button class="vatch-video-btn" type="button">
+											<svg class="ico" width="46" height="52" viewBox="0 0 46 52" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M3.66522e-06 2.4197C3.73208e-06 0.890042 1.64732 -0.0733876 2.98053 0.676542L44.9011 24.2568C46.2604 25.0215 46.2604 26.9785 44.9011 27.7431L2.98053 51.3235C1.64732 52.0734 1.5369e-06 51.11 1.60376e-06 49.5803L3.66522e-06 2.4197Z"
+													fill="currentColor" />
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- section-floorplans -->
+			<section class="swiper-slide main-floorplans section-dark main-center">
+				<div class="main-floorplans__title-img" data-swiper-parallax="+40">
+					<img src="img/title-floorplan.png" alt="">
+				</div>
+				<div class="main-floorplans__contgent container">
+					<ul class="nav nav-pills main-floorplans__nav mb-3" id="pills-floorplans-tab" role="tablist">
+						<li class="nav-item main-floorplans__tabs" role="presentation">
+							<button class="main-floorplans__btn active" id="pills-floorplans-1-tab" data-bs-toggle="pill"
+								data-bs-target="#pills-floorplans-1" type="button" role="tab"
+								aria-controls="pills-floorplans-1" aria-selected="true">1 bedroom</button>
+						</li>
+						<li class="nav-item " role="presentation">
+							<button class="main-floorplans__btn main-floorplans__tabs" id="pills-floorplans-2-tab"
+								data-bs-toggle="pill" data-bs-target="#pills-floorplans-2" type="button" role="tab"
+								aria-controls="pills-floorplans-2" aria-selected="false">2 bedroom</button>
+						</li>
+						<li class="nav-item main-floorplans__tabs" role="presentation">
+							<button class="main-floorplans__btn" id="pills-floorplans-3-tab" data-bs-toggle="pill"
+								data-bs-target="#pills-floorplans-3" type="button" role="tab"
+								aria-controls="pills-floorplans-3" aria-selected="false">3 bedroom</button>
+						</li>
+					</ul>
+					<div class="tab-content lg-list" id="pills-floorplans-tabContent">
+						<div class="tab-pane fade show active" id="pills-floorplans-1" role="tabsection"
+							aria-labelledby="pills-floorplans-1-tab">
+							<div class="swiper">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<div class="floorplans-one-bed">
+											<div class="floorplans-one-bed__img lg-item"
+												data-src="img/floorplans/floorplan-1.png">
+												<img src="img/floorplans/floorplan-1.png" alt="">
+											</div>
+											<div class="floorplans-one-bed__list">
+												<ul>
+													<li>
+														<span class="name">Type</span>
+														<span class="number">A</span>
+													</li>
+													<li>
+														<span class="name">Bedrooms</span>
+														<span class="number">2</span>
+													</li>
+													<li>
+														<span class="name">Bathrooms</span>
+														<span class="number">2</span>
+													</li>
+													<li>
+														<span class="name">Total area</span>
+														<span class="number">460 sq.ft</span>
+													</li>
+												</ul>
+												<div class="floorplans-one-bed__list-info">
+													<div class="floorplans-get">Get information about all floor plans
+													</div>
+													<button class="floorplans-get-btn" data-bs-toggle="modal"
+														data-bs-target="#objectModal">Download PDF (11.8
+														mb)</button>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="floorplans-one-bed">
+											<div class="floorplans-one-bed__img lg-item"
+												data-src="img/floorplans/floorplan-1.png">
+												<img src="img/floorplans/floorplan-1.png" alt="">
+											</div>
+											<div class="floorplans-one-bed__list">
+												<ul>
+													<li>
+														<span class="name">Type</span>
+														<span class="number">A</span>
+													</li>
+													<li>
+														<span class="name">Bedrooms</span>
+														<span class="number">2</span>
+													</li>
+													<li>
+														<span class="name">Bathrooms</span>
+														<span class="number">2</span>
+													</li>
+													<li>
+														<span class="name">Total area</span>
+														<span class="number">460 sq.ft.</span>
+													</li>
+												</ul>
+												<div class="floorplans-one-bed__list-info">
+													<div class="floorplans-get">Get information about all floor plans
+													</div>
+													<button class="floorplans-get-btn" data-bs-toggle="modal"
+														data-bs-target="#objectModal">Download PDF (11.8
+														mb)</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="forSwiper">
+									<div class="forSwiper-btn swiper-button-prev">
+										<svg width="50" height="51" viewBox="0 0 50 51" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path d="M17 25.9983L28 16.9983L28 34.9983L17 25.9983Z" fill="#D0906F" />
+											<rect x="49" y="49.9983" width="48" height="48" rx="24"
+												transform="rotate(-180 49 49.9983)" stroke="#D0906F" stroke-width="2" />
+										</svg>
+									</div>
+									<div class="forSwiper-btn swiper-button-next">
+										<svg width="50" height="50" viewBox="0 0 50 50" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path d="M33 25L22 34L22 16L33 25Z" fill="#D0906F" />
+											<rect x="1" y="1" width="48" height="48" rx="24" stroke="#D0906F"
+												stroke-width="2" />
+										</svg>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="pills-floorplans-2" role="tabsection"
+							aria-labelledby="pills-floorplans-2-tab">
+							<div class="swiper">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<div class="floorplans-one-bed">
+											<div class="floorplans-one-bed__img lg-item"
+												data-src="img/floorplans/floorplan-1.png">
+												<img src="img/floorplans/floorplan-1.png" alt="">
+											</div>
+											<div class="floorplans-one-bed__list">
+												<ul>
+													<li>
+														<span class="name">Type</span>
+														<span class="number">A</span>
+													</li>
+													<li>
+														<span class="name">Bedrooms</span>
+														<span class="number">2</span>
+													</li>
+													<li>
+														<span class="name">Bathrooms</span>
+														<span class="number">2</span>
+													</li>
+													<li>
+														<span class="name">Total area</span>
+														<span class="number">460 sq.ft</span>
+													</li>
+												</ul>
+												<div class="floorplans-one-bed__list-info">
+													<div class="floorplans-get">Get information about all floor plans
+													</div>
+													<button class="floorplans-get-btn" data-bs-toggle="modal"
+														data-bs-target="#objectModal">Download PDF (11.8
+														mb)</button>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="floorplans-one-bed">
+											<div class="floorplans-one-bed__img lg-item"
+												data-src="img/floorplans/floorplan-1.png">
+												<img src="img/floorplans/floorplan-1.png" alt="">
+											</div>
+											<div class="floorplans-one-bed__list">
+												<ul>
+													<li>
+														<span class="name">Type</span>
+														<span class="number">A</span>
+													</li>
+													<li>
+														<span class="name">Bedrooms</span>
+														<span class="number">2</span>
+													</li>
+													<li>
+														<span class="name">Bathrooms</span>
+														<span class="number">2</span>
+													</li>
+													<li>
+														<span class="name">Total area</span>
+														<span class="number">460 sq.ft</span>
+													</li>
+												</ul>
+												<div class="floorplans-one-bed__list-info">
+													<div class="floorplans-get">Get information about all floor plans
+													</div>
+													<button class="floorplans-get-btn" data-bs-toggle="modal"
+														data-bs-target="#objectModal">Download PDF (11.8
+														mb)</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="forSwiper">
+									<div class="forSwiper-btn swiper-button-prev">
+										<svg width="50" height="51" viewBox="0 0 50 51" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path d="M17 25.9983L28 16.9983L28 34.9983L17 25.9983Z" fill="#D0906F" />
+											<rect x="49" y="49.9983" width="48" height="48" rx="24"
+												transform="rotate(-180 49 49.9983)" stroke="#D0906F" stroke-width="2" />
+										</svg>
+									</div>
+									<div class="forSwiper-btn swiper-button-next">
+										<svg width="50" height="50" viewBox="0 0 50 50" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path d="M33 25L22 34L22 16L33 25Z" fill="#D0906F" />
+											<rect x="1" y="1" width="48" height="48" rx="24" stroke="#D0906F"
+												stroke-width="2" />
+										</svg>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="pills-floorplans-3" role="tabsection"
+							aria-labelledby="pills-floorplans-3-tab">
+							<div class="swiper">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<div class="floorplans-one-bed">
+											<div class="floorplans-one-bed__img lg-item"
+												data-src="img/floorplans/floorplan-1.png">
+												<img src="img/floorplans/floorplan-1.png" alt="">
+											</div>
+											<div class="floorplans-one-bed__list">
+												<ul>
+													<li>
+														<span class="name">Type</span>
+														<span class="number">A</span>
+													</li>
+													<li>
+														<span class="name">Bedrooms</span>
+														<span class="number">2</span>
+													</li>
+													<li>
+														<span class="name">Bathrooms</span>
+														<span class="number">2</span>
+													</li>
+													<li>
+														<span class="name">Total area</span>
+														<span class="number">460 sq.ft</span>
+													</li>
+												</ul>
+												<div class="floorplans-get">Get information about all floor plans </div>
+												<button class="floorplans-get-btn" data-bs-toggle="modal"
+													data-bs-target="#objectModal">Download PDF (11.8
+													mb)</button>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="floorplans-one-bed">
+											<div class="floorplans-one-bed__img lg-item"
+												data-src="img/floorplans/floorplan-1.png">
+												<img src="img/floorplans/floorplan-1.png" alt="">
+											</div>
+											<div class="floorplans-one-bed__list">
+												<ul>
+													<li>
+														<span class="name">Type</span>
+														<span class="number">A</span>
+													</li>
+													<li>
+														<span class="name">Bedrooms</span>
+														<span class="number">2</span>
+													</li>
+													<li>
+														<span class="name">Bathrooms</span>
+														<span class="number">2</span>
+													</li>
+													<li>
+														<span class="name">Total area</span>
+														<span class="number">460 sq.ft</span>
+													</li>
+												</ul>
+												<div class="floorplans-get">Get information about all floor plans </div>
+												<button class="floorplans-get-btn" data-bs-toggle="modal"
+													data-bs-target="#objectModal">Download PDF (11.8
+													mb)</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="forSwiper">
+									<div class="forSwiper-btn swiper-button-prev">
+										<svg width="50" height="51" viewBox="0 0 50 51" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path d="M17 25.9983L28 16.9983L28 34.9983L17 25.9983Z" fill="#D0906F" />
+											<rect x="49" y="49.9983" width="48" height="48" rx="24"
+												transform="rotate(-180 49 49.9983)" stroke="#D0906F" stroke-width="2" />
+										</svg>
+									</div>
+									<div class="forSwiper-btn swiper-button-next">
+										<svg width="50" height="50" viewBox="0 0 50 50" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path d="M33 25L22 34L22 16L33 25Z" fill="#D0906F" />
+											<rect x="1" y="1" width="48" height="48" rx="24" stroke="#D0906F"
+												stroke-width="2" />
+										</svg>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- section-video -->
+			<section class="swiper-slide main-video section-dark main-center">
+				<div class="main-video__title-img" data-swiper-parallax="+40">
+					<img src="img/title-lifistyle.png" alt="">
+				</div>
+				<h2 class="main-video__title" data-swiper-parallax="+100">W Downtown</h2>
+				<div class="lg-list">
+					<div class="main-video__container container">
+						<div data-src="https://www.youtube.com/watch?v=RXLkBmM6Xqk" data-poster="img/gallery-3-1.jpg"
+							class="lg-item">
+							<img src="img/gallery-3-1.jpg" alt="">
+							<div class="batch-video">
+								<button class="vatch-video-btn" type="button">
+									<svg class="ico" width="46" height="52" viewBox="0 0 46 52" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M3.66522e-06 2.4197C3.73208e-06 0.890042 1.64732 -0.0733876 2.98053 0.676542L44.9011 24.2568C46.2604 25.0215 46.2604 26.9785 44.9011 27.7431L2.98053 51.3235C1.64732 52.0734 1.5369e-06 51.11 1.60376e-06 49.5803L3.66522e-06 2.4197Z"
+											fill="currentColor" />
+									</svg>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- section-special-offer -->
+			<section class="swiper-slide section-special-offer section-dark main-center">
+				<div class="container-fluid">
+					<div data-swiper-parallax="+50">
+						<h2 class="main-title">Buy an apartment in W Downtown and<br /> get a Special offer from Marriot
+						</h2>
+					</div>
+					<div class="section-special-offer__info">
+						<p><span>“Platinum Elite” status in Marriott Bonvoy for two years</span></p>
+					</div>
+					<div class="section-special-offer__cards">
+						<div class="section-special-offer__cards-1">
+							<img id="anim-img-1" src="img/cards-1.png" alt="">
+							<div class="section-special-offer__markers-1">
+								<p>50% Bonus Points on Stays</p>
+								<svg width="92" height="92" viewBox="0 0 92 92" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<g filter="url(#filter0_d_2_885)">
+										<circle cx="46" cy="45" r="17" fill="#D0906F" />
+									</g>
+									<circle cx="46" cy="45" r="7" fill="white" />
+									<defs>
+										<filter id="filter0_d_2_885" x="0" y="0" width="92" height="92"
+											filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+											<feFlood flood-opacity="0" result="BackgroundImageFix" />
+											<feColorMatrix in="SourceAlpha" type="matrix"
+												values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+											<feOffset dy="1" />
+											<feGaussianBlur stdDeviation="14.5" />
+											<feComposite in2="hardAlpha" operator="out" />
+											<feColorMatrix type="matrix"
+												values="0 0 0 0 0.701961 0 0 0 0 0.501961 0 0 0 0 0.403922 0 0 0 1 0" />
+											<feBlend mode="normal" in2="BackgroundImageFix"
+												result="effect1_dropShadow_2_885" />
+											<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2_885"
+												result="shape" />
+										</filter>
+									</defs>
+								</svg>
+							</div>
+							<div class="section-special-offer__markers-2">
+								<svg width="92" height="92" viewBox="0 0 92 92" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<g filter="url(#filter0_d_2_885)">
+										<circle cx="46" cy="45" r="17" fill="#D0906F" />
+									</g>
+									<circle cx="46" cy="45" r="7" fill="white" />
+									<defs>
+										<filter id="filter0_d_2_885" x="0" y="0" width="92" height="92"
+											filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+											<feFlood flood-opacity="0" result="BackgroundImageFix" />
+											<feColorMatrix in="SourceAlpha" type="matrix"
+												values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+											<feOffset dy="1" />
+											<feGaussianBlur stdDeviation="14.5" />
+											<feComposite in2="hardAlpha" operator="out" />
+											<feColorMatrix type="matrix"
+												values="0 0 0 0 0.701961 0 0 0 0 0.501961 0 0 0 0 0.403922 0 0 0 1 0" />
+											<feBlend mode="normal" in2="BackgroundImageFix"
+												result="effect1_dropShadow_2_885" />
+											<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2_885"
+												result="shape" />
+										</filter>
+									</defs>
+								</svg>
+								<p>Exclusive Member Rates</p>
+							</div>
+							<div class="section-special-offer__markers-3">
+								<p>Enhanced Room Upgrade</p>
+								<svg width="92" height="92" viewBox="0 0 92 92" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<g filter="url(#filter0_d_2_885)">
+										<circle cx="46" cy="45" r="17" fill="#D0906F" />
+									</g>
+									<circle cx="46" cy="45" r="7" fill="white" />
+									<defs>
+										<filter id="filter0_d_2_885" x="0" y="0" width="92" height="92"
+											filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+											<feFlood flood-opacity="0" result="BackgroundImageFix" />
+											<feColorMatrix in="SourceAlpha" type="matrix"
+												values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+											<feOffset dy="1" />
+											<feGaussianBlur stdDeviation="14.5" />
+											<feComposite in2="hardAlpha" operator="out" />
+											<feColorMatrix type="matrix"
+												values="0 0 0 0 0.701961 0 0 0 0 0.501961 0 0 0 0 0.403922 0 0 0 1 0" />
+											<feBlend mode="normal" in2="BackgroundImageFix"
+												result="effect1_dropShadow_2_885" />
+											<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2_885"
+												result="shape" />
+										</filter>
+									</defs>
+								</svg>
+							</div>
+						</div>
+						<div class="section-special-offer__cards-2">
+							<img id="anim-img-2" src="img/cards-2.png" alt="">
+							<div class="section-special-offer__markers-4">
+								<svg width="92" height="92" viewBox="0 0 92 92" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<g filter="url(#filter0_d_2_885)">
+										<circle cx="46" cy="45" r="17" fill="#D0906F" />
+									</g>
+									<circle cx="46" cy="45" r="7" fill="white" />
+									<defs>
+										<filter id="filter0_d_2_885" x="0" y="0" width="92" height="92"
+											filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+											<feFlood flood-opacity="0" result="BackgroundImageFix" />
+											<feColorMatrix in="SourceAlpha" type="matrix"
+												values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+											<feOffset dy="1" />
+											<feGaussianBlur stdDeviation="14.5" />
+											<feComposite in2="hardAlpha" operator="out" />
+											<feColorMatrix type="matrix"
+												values="0 0 0 0 0.701961 0 0 0 0 0.501961 0 0 0 0 0.403922 0 0 0 1 0" />
+											<feBlend mode="normal" in2="BackgroundImageFix"
+												result="effect1_dropShadow_2_885" />
+											<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2_885"
+												result="shape" />
+										</filter>
+									</defs>
+								</svg>
+								<p>Dedicated Elite Support </p>
+							</div>
+							<div class="section-special-offer__markers-5">
+								<svg width="92" height="92" viewBox="0 0 92 92" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<g filter="url(#filter0_d_2_885)">
+										<circle cx="46" cy="45" r="17" fill="#D0906F" />
+									</g>
+									<circle cx="46" cy="45" r="7" fill="white" />
+									<defs>
+										<filter id="filter0_d_2_885" x="0" y="0" width="92" height="92"
+											filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+											<feFlood flood-opacity="0" result="BackgroundImageFix" />
+											<feColorMatrix in="SourceAlpha" type="matrix"
+												values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+											<feOffset dy="1" />
+											<feGaussianBlur stdDeviation="14.5" />
+											<feComposite in2="hardAlpha" operator="out" />
+											<feColorMatrix type="matrix"
+												values="0 0 0 0 0.701961 0 0 0 0 0.501961 0 0 0 0 0.403922 0 0 0 1 0" />
+											<feBlend mode="normal" in2="BackgroundImageFix"
+												result="effect1_dropShadow_2_885" />
+											<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2_885"
+												result="shape" />
+										</filter>
+									</defs>
+								</svg>
+								<p>Lounge Access </p>
+							</div>
+						</div>
+						<div class="section-special-offer__cards-mobile">
+							<div class="section-special-offer__markers">
+								<svg width="20" height="20" viewBox="0 0 25 25" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M25 12.5C25 19.4036 19.4036 25 12.5 25C5.59644 25 0 19.4036 0 12.5C0 5.59644 5.59644 0 12.5 0C19.4036 0 25 5.59644 25 12.5Z"
+										fill="#D9AA92" />
+								</svg>
+								<p>50% Bonus Points on Stays</p>
+							</div>
+							<div class="section-special-offer__markers">
+								<svg width="20" height="20" viewBox="0 0 25 25" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M25 12.5C25 19.4036 19.4036 25 12.5 25C5.59644 25 0 19.4036 0 12.5C0 5.59644 5.59644 0 12.5 0C19.4036 0 25 5.59644 25 12.5Z"
+										fill="#D9AA92" />
+								</svg>
+								<p>Exclusive Member Rates</p>
+							</div>
+							<div class="section-special-offer__markers">
+								<svg width="20" height="20" viewBox="0 0 25 25" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M25 12.5C25 19.4036 19.4036 25 12.5 25C5.59644 25 0 19.4036 0 12.5C0 5.59644 5.59644 0 12.5 0C19.4036 0 25 5.59644 25 12.5Z"
+										fill="#D9AA92" />
+								</svg>
+								<p>Enhanced Room Upgrade</p>
+							</div>
+							<div class="section-special-offer__markers">
+								<svg width="20" height="20" viewBox="0 0 25 25" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M25 12.5C25 19.4036 19.4036 25 12.5 25C5.59644 25 0 19.4036 0 12.5C0 5.59644 5.59644 0 12.5 0C19.4036 0 25 5.59644 25 12.5Z"
+										fill="#D9AA92" />
+								</svg>
+								<p>Dedicated Elite Support </p>
+							</div>
+							<div class="section-special-offer__markers">
+								<svg width="20" height="20" viewBox="0 0 25 25" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M25 12.5C25 19.4036 19.4036 25 12.5 25C5.59644 25 0 19.4036 0 12.5C0 5.59644 5.59644 0 12.5 0C19.4036 0 25 5.59644 25 12.5Z"
+										fill="#D9AA92" />
+								</svg>
+								<p>Lounge Access </p>
+							</div>
+	
+						</div>
+					</div>
+					<div class="section-special-offer__info py-5">
+						<p class="section-special-offer__info-text">Detailed information about Marriott Special Offer in
+							W
+							Residences<br /> Downtown with answers to frequently asked questions</p>
+						<button class="section-special-offer__btn" data-bs-toggle="modal" data-bs-target="#objectModal1">Get
+							the description file</button>
+					</div>
+				</div>
+			</section>
+			<!-- section-developer -->
+			<section class="swiper-slide main-developer section-dark main-center">
+				<div class="container">
+					<div class="developer__list">
+						<div class="developer__item developer-card developer-card_odd lg-list">
+							<div class="developer-card__img">
+								<div data-src="https://www.youtube.com/watch?v=JhJl-Sa41dQ"
+									data-poster="img/developer-poster.jpg" class="lg-item">
+									<img src="img/developer.jpg" alt="">
+									<div class="developer-card__img-play">
+										<div class="batch-video">
+											<button class="vatch-video-btn" type="button">
+												<svg class="ico" width="46" height="52" viewBox="0 0 46 52" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M3.66522e-06 2.4197C3.73208e-06 0.890042 1.64732 -0.0733876 2.98053 0.676542L44.9011 24.2568C46.2604 25.0215 46.2604 26.9785 44.9011 27.7431L2.98053 51.3235C1.64732 52.0734 1.5369e-06 51.11 1.60376e-06 49.5803L3.66522e-06 2.4197Z"
+														fill="currentColor" />
+												</svg>
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="developer-card__text" data-swiper-parallax="+80">
+								<h2 class="main-headline">Information about the developer</h2>
+								<div class="developer-card__description">Dar Al Arkan was first established in 1994,
+									with
+									one commitment in mind, delivering premier real estate projects. Whether it’s a new
+									home
+									or a new property investment, every future homeowner or investor should enjoy a
+									contemporary lifestyle that matches their aspirations and success, as well as,
+									develops
+									and preserves their wealth for future generations</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="developer-card__list-bg">
+					<div class="developer-card__list-item"></div>
+					<div class="developer-card__list">
+						<div class="developer-card__item">
+							<div class="developer-card__item-title">8</div>
+							<div class="developer-card__item-desc">Countries</div>
+						</div>
+						<div class="developer-card__item">
+							<div class="developer-card__item-title">35 <span>bln</span></div>
+							<div class="developer-card__item-desc">SAR in Assets</div>
+						</div>
+						<div class="developer-card__item">
+							<div class="developer-card__item-title">15 000</div>
+							<div class="developer-card__item-desc">Units delivered</div>
+						</div>
+						<div class="developer-card__item">
+							<div class="developer-card__item-title">500 000 <span>sq. m</span></div>
+							<div class="developer-card__item-desc">Of commercial spaces</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- section-paymentplan -->
+			<section class="swiper-slide main-paymentplan section-dark main-center">
+				<div class="container">
+					<h2 class="main-headline">Payment Plan</h2>
+					<div class="main-paymentplan__cards">
+						<div class="main-paymentplan__cards-item" data-swiper-parallax="+120">
+							<p>On booking</p>
+							<span>10%</span>
+						</div>
+						<div class="main-paymentplan__cards-item" data-swiper-parallax="+120">
+							<p>Within 60 days<br /> from booking</p>
+							<span>10%</span>
+						</div>
+						<div class="main-paymentplan__cards-item" data-swiper-parallax="+120">
+							<p>During construction</p>
+							<span>40%</span>
+						</div>
+						<div class="main-paymentplan__cards-item" data-swiper-parallax="+120">
+							<p>On completion</p>
+							<span>40%</span>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- section-agents -->
+			<!-- <section class="swiper-slide main-agents">
+					<div data-swiper-parallax-y="100%">
+						<div class="main-agents-img">
+							<div class="main-agents__bg-gradient"></div>
+							<img src="img/main-agent.jpg" alt="">
+						</div>
+						<div class="main-agents__headline">
+							<h2 class="main-agents__title">AX CAPITAL — INNOVATIVE
+								REAL ESTATE AGENCY IN DUBAI</h2>
+						</div>
+					</div>
+				</section> -->
+			<!-- section-about-company -->
+			<!-- <section class="swiper-slide main-about-company section-dark main-center">
+					<div class="container">
+						<div class="main-about-company__bg-gradient"></div>
+						<h2 class="main-title">BUY WITH THOSE WHO SPECIALIZE<br />
+							IN ULTRA-LUXURY REAL ESTATE</h2>
+	
+						<p class="main-about-company__subtitle">Our Company IN NUMBERS</p>
+						<div class="main-about-company__list">
+							<div class="main-about-company__item" data-swiper-parallax="+120">
+								<span>10+</span>
+								<p>Years of Experience</p>
+							</div>
+							<div class="main-about-company__item" data-swiper-parallax="+120">
+								<span>270</span>
+								<p>Number of employees</p>
+							</div>
+							<div class="main-about-company__item" data-swiper-parallax="+120">
+								<span>4 000</span>
+								<p>Number of deals</p>
+							</div>
+							<div class="main-about-company__item" data-swiper-parallax="+120">
+								<span>25+</span>
+								<p>Languages</p>
+							</div>
+						</div>
+					</div>
+				</section> -->
+			<!-- section-ax-capital-->
+			<!-- <section class="swiper-slide main-ax-capital">
+					<div data-swiper-parallax-y="100%">
+						<div class="main-ax-capital-img">
+							<div class="main-ax-capital__bg-gradient"></div>
+							<img src="img/main-ax-capital.jpg" alt="">
+						</div>
+						<div class="main-agents__headline">
+							<div class="main-ax-capital__position-center">
+								<h2 class="main-ax-capital__title">Plan your in-Person Visit</h2>
+								<p class="main-ax-capital__text">It is better to witness something once rather than hear
+									about
+									it a
+									thousand times.<br /><br /> Our experts will meet you at any convenient time, walk you
+									through
+									the showroom, and tell you about the advantages of the neighbourhood</p>
+							</div>
+						</div>
+					</div>
+				</section> -->
+			<!-- section-footer-->
+			<footer class="swiper-slide main-footer section-dark main-center">
+				<div class="container">
+					<h2 class="main-headline">Book a visit</h2>
+					<form action="{% url 'form_receiver' %}" method="post" data-gtag-submit="download_brochure">
+						<!-- {% csrf_token %} -->
+						<div class="download-brochure-form__form">
+							<div class="download-brochure-form__input">
+								<input class="download-brochure-__form-control" type="text" name="name"
+									placeholder="Your name" required>
+							</div>
+							<div class="download-brochure-form__input">
+								<input class="download-brochure-__form-control" type="email" name="email"
+									pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Your email" required>
+							</div>
+							<div class="download-brochure-form__input">
+								<input class="download-brochure-__form-control" type="tel" name="phone"
+									pattern="[+]?[0-9].{8,15}$" placeholder="Phone number" required>
+							</div>
+							<div class="download-brochure-form__input">
+								<input type="text"
+									class="download-brochure-__form-control download-brochure-__form-control-item"
+									name="datepicker" placeholder="Convenient visit date" required>
+							</div>
+						</div>
+						<input type="hidden" name="project" value="dubai_hills">
+						<input type="hidden" name="description" value="page_form">
+						<input type="hidden" name="duration" class="duration" value="">
+						<input type="hidden" name="pasted_fields" class="pasted_fields" value="">
+						<input type="hidden" name="language" value="english">
+						<button class="download-brochure-form__btn btn" type="submit">Send
+							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M11.0372 4.34766L10.1463 5.23856L14.1106 9.20292H2.60938V10.4629H14.1106L10.1463 14.4272L11.0372 15.3181L16.5224 9.83285L11.0372 4.34766Z"
+									fill="white" />
+							</svg>
+						</button>
+					</form>
+				</div>
+				<div class="app-footer__container container container_pb">
+					<div class="app-footer__body">
+						<a href="index.html" class="app-footer__logo">
+							<img src="img/Logo-footer.svg" alt="">
+						</a>
+						<div class="app-footer__call-us footer-call-us">
+							<div class="footer-call-us__title">Call us</div>
+							<div class="footer-call-us__item">
+								<a href="#" class="footer-call-us__link event_call" data-gtag-click="phone_call">Call
+									<svg width="19" height="19" viewBox="0 0 19 19" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M4.27841 0.714021C3.62274 1.08852 1.61813 3.38477 1.04691 4.41565C0.911594 4.65983 0.906341 4.68372 0.93209 4.93528C1.01869 5.77999 1.39705 6.99311 1.91936 8.10071C2.49511 9.32173 3.46873 10.7826 4.57674 12.0881C5.14179 12.7539 6.46606 14.0707 7.12396 14.6211C9.50487 16.6126 11.9028 17.8583 14.0639 18.2262C14.2584 18.2593 14.4718 18.2864 14.5382 18.2864C14.7665 18.2864 15.3956 17.8851 16.3453 17.1335C17.5717 16.163 18.5368 15.2153 18.7023 14.819C18.8346 14.502 18.5747 14.2032 17.6229 13.5781C16.2424 12.6714 14.9568 11.9543 14.3492 11.7519C14.0648 11.6573 14.0426 11.6554 13.9001 11.7143C13.7081 11.7937 13.5814 11.9147 13.0333 12.5421C12.7867 12.8244 12.505 13.132 12.4073 13.2257L12.2297 13.3961L11.9752 13.3309C11.1458 13.1183 10.0257 12.5378 9.0957 11.8386C8.68427 11.5293 7.99143 10.8639 7.60846 10.4103C6.8866 9.55525 6.20188 8.32065 5.92688 7.37831L5.83706 7.07041L6.05268 6.85134C6.17128 6.73085 6.4653 6.46681 6.70608 6.2646C7.26142 5.79823 7.4628 5.59143 7.53945 5.40872C7.59592 5.2741 7.59445 5.24378 7.51987 5.00425C7.29688 4.28798 5.66736 1.56587 5.07851 0.925868C4.75109 0.57 4.60038 0.530125 4.27841 0.714021ZM10.467 1.23128V1.86295L10.656 1.86327C11.4849 1.86469 12.5858 2.12999 13.4406 2.53434C14.9006 3.22495 16.0037 4.29548 16.7151 5.7122C17.1608 6.59997 17.3503 7.26836 17.4399 8.2685L17.4884 8.81134H18.1167H18.7449V8.63787C18.7449 8.33451 18.6674 7.66122 18.5808 7.21242C18.3452 5.99175 17.6893 4.599 16.909 3.66266C15.4831 1.95158 13.5724 0.911418 11.3899 0.658157C11.1124 0.625942 10.7912 0.599609 10.6762 0.599609H10.467V1.23128ZM10.467 4.37831V5.00994L10.7813 5.03596C11.7097 5.11278 12.5158 5.49601 13.1931 6.1826C13.837 6.83531 14.1956 7.60678 14.2728 8.50537L14.299 8.81134H14.9301H15.5611V8.6486C15.5611 8.10398 15.3169 7.13907 15.041 6.59374C14.5555 5.63391 13.6938 4.76955 12.7554 4.30093C12.1637 4.0055 11.5007 3.82406 10.8293 3.77376L10.467 3.74664V4.37831Z"
+											fill="currentColor" />
+									</svg>
+								</a>
+							</div>
+							<div class="footer-call-us__item">
+								<a href="#" class="footer-call-us__link event_wp" data-gtag-click="whatsapp">WhatsAPP
+									<svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M9.4744 0.870696C8.35712 0.985042 7.50464 1.18202 6.62596 1.52896C5.39799 2.01384 4.39933 2.65771 3.43497 3.58641C1.59472 5.35853 0.585518 7.59248 0.478401 10.131C0.409302 11.7693 0.824012 13.5508 1.61014 14.9922C1.70447 15.1653 1.78167 15.3302 1.78163 15.3587C1.78163 15.3873 1.40668 16.5103 0.948414 17.8543C0.490182 19.1983 0.115234 20.3281 0.115234 20.3648C0.115234 20.4456 0.271569 20.5994 0.353612 20.5994C0.38605 20.5994 1.56519 20.2349 2.97387 19.7893C4.38255 19.3437 5.56002 18.9791 5.59045 18.9791C5.62087 18.9791 5.84452 19.0731 6.08743 19.188C6.8822 19.5638 7.87164 19.859 8.83496 20.0077C9.46138 20.1044 10.9599 20.105 11.5865 20.0088C13.7152 19.682 15.6211 18.7337 17.11 17.2605C18.0223 16.3579 18.7577 15.2637 19.2349 14.099C19.5398 13.3548 19.7367 12.6198 19.8859 11.6686C19.9516 11.2498 19.9517 9.7613 19.8861 9.29601C19.5602 6.98453 18.525 4.98687 16.8536 3.44428C15.3922 2.09551 13.6202 1.25451 11.5865 0.944419C11.1968 0.885009 9.80835 0.836555 9.4744 0.870696ZM11.4217 2.94821C13.7001 3.3287 15.667 4.65348 16.8513 6.60526C17.346 7.42061 17.7379 8.53259 17.8674 9.4889C17.9289 9.94289 17.9298 11.0175 17.869 11.4564C17.7662 12.1977 17.4567 13.198 17.1283 13.8501C16.3722 15.3513 15.0142 16.6658 13.5009 17.3613C12.4908 17.8256 11.5921 18.0395 10.482 18.0799C8.95715 18.1354 7.53475 17.7735 6.24291 17.0015C6.05422 16.8887 5.87544 16.8091 5.81662 16.8116C5.76085 16.814 5.14845 16.9961 4.45572 17.2162C3.76298 17.4364 3.19179 17.6134 3.1864 17.6097C3.18097 17.606 3.35975 17.0609 3.58363 16.3984C3.80747 15.736 3.9904 15.1472 3.99005 15.0901C3.98966 15.0277 3.88762 14.8326 3.734 14.6005C3.02948 13.5364 2.60861 12.2765 2.52013 10.9669C2.48336 10.422 2.51548 9.68511 2.59559 9.23815C3.03429 6.78971 4.56318 4.75876 6.80035 3.65253C7.63443 3.24013 8.47129 3.00569 9.57129 2.87626C9.85292 2.84312 11.0776 2.89076 11.4217 2.94821ZM7.1879 5.99627C6.58581 6.09086 6.31562 6.20262 6.03224 6.47433C5.34075 7.13729 5.14198 8.4444 5.56328 9.55858C5.96392 10.6182 7.30935 12.3614 8.42494 13.2664C9.50843 14.1454 10.7476 14.7279 12.1678 15.0258C12.5446 15.1048 13.2379 15.1044 13.54 15.025C14.1179 14.8731 14.8135 14.3749 15.0392 13.9512C15.2443 13.5662 15.3391 12.7464 15.2078 12.4936C15.1573 12.3966 14.9988 12.3052 14.2486 11.9407C13.7543 11.7006 13.2335 11.4586 13.0913 11.4031C12.6166 11.2176 12.4983 11.2617 12.0815 11.7791C11.5841 12.3966 11.4952 12.498 11.4523 12.4975C11.4302 12.4973 11.2764 12.4381 11.1106 12.366C10.4771 12.0907 9.59202 11.4104 8.95885 10.7122C8.68839 10.414 8.25364 9.84444 8.25364 9.78835C8.25364 9.7696 8.37204 9.6181 8.51674 9.45168C8.88394 9.0294 9.00788 8.79307 9.00311 8.52445C8.99993 8.34529 8.93494 8.16209 8.58584 7.34782C8.35839 6.81737 8.12637 6.31705 8.07022 6.23599C7.89191 5.97875 7.67481 5.91977 7.1879 5.99627Z"
+											fill="currentColor" />
+									</svg>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="app-footer__copy">Ax Capital © 2022 All Rights Reserved</div>
+				</div>
+			</footer>
+		</div>
+
+			<!-- section-banner -->
+	</div>
+	<!-- modal object modal -->
+	<div class="special-offer-modal modal fade" id="objectModal" tabindex="-1" aria-labelledby="objectModalLabel"
+		aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-lg">
+			<div class="modal-content">
+				<button type="button" class="special-offer-modal__close-btn btn" data-bs-dismiss="modal"><svg width="18"
+						height="2" viewBox="0 0 18 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<rect width="18" height="2" fill="#A0A0A0" />
+					</svg>
+				</button>
+				<div class="special-offer-modal__body modal-body">
+					<div class="special-offer-modal__start">
+						<!-- <div class="special-offer-modal__bg">
+								<img src="img/special-offer-modal.jpg" alt="">
+							</div> -->
+						<div class="special-offer-modal__text">
+							<h6 class="special-offer-modal__title">Get updated information about <span>W
+									Downtown</span></h6>
+							<div class="special-offer-modal__desc">By downloading PDF, you will receive:
+							</div>
+							<div class="special-offer-modal__list">
+								<div class="special-offer-modal__item">
+									<div class="special-offer-modal__item-ico">
+										<svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<rect width="10" height="10" rx="5" fill="white" />
+										</svg>
+
+
+									</div>
+									<div class="special-offer-modal__item-desc">Project's floor plans</div>
+								</div>
+								<div class="special-offer-modal__item">
+									<div class="special-offer-modal__item-ico">
+										<svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<rect width="10" height="10" rx="5" fill="white" />
+										</svg>
+
+
+									</div>
+									<div class="special-offer-modal__item-desc">Prices</div>
+								</div>
+								<div class="special-offer-modal__item">
+									<div class="special-offer-modal__item-ico">
+										<svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<rect width="10" height="10" rx="5" fill="white" />
+										</svg>
+
+
+									</div>
+									<div class="special-offer-modal__item-desc">Available units</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="special-offer-modal__end">
+						<form action="{% url 'form_receiver' %}" method="post" class="special-offer-modal__form"
+							data-gtag-submit="get_pdf">
+							<!-- {% csrf_token %} -->
+							<div class="special-offer-modal__input">
+								<input class="form-control" type="text" name="text" placeholder="Your name" required>
+							</div>
+							<div class="special-offer-modal__input">
+								<input class="form-control" type="email" name="email" placeholder="Your email"
+									pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+							</div>
+							<div class="special-offer-modal__input">
+								<input class="form-control" type="tel" name="phone" placeholder="Phone number"
+									pattern="[+]?[0-9].{8,15}$" required>
+							</div>
+							<!-- <input type="hidden" name="project" value="dubai_hills"> -->
+							<input type="hidden" name="description" value="page_form">
+							<input type="hidden" name="duration" class="duration" value="">
+							<input type="hidden" name="pasted_fields" class="pasted_fields" value="">
+							<input type="hidden" name="language" value="english">
+							<button class="special-offer-modal__btn btn btn-gradient" type="submit">Download
+								file</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- modal object modal -->
+	<div class="special-offer-modal modal fade" id="objectModal1" tabindex="-1" aria-labelledby="objectModalLabel"
+		aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-lg">
+			<div class="modal-content">
+				<button type="button" class="special-offer-modal__close-btn btn" data-bs-dismiss="modal"><svg width="18"
+						height="2" viewBox="0 0 18 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<rect width="18" height="2" fill="#A0A0A0" />
+					</svg>
+				</button>
+				<div class="special-offer-modal__body modal-body">
+					<div class="special-offer-modal__start">
+						<!-- <div class="special-offer-modal__bg">
+								<img src="img/special-offer-modal.jpg" alt="">
+							</div> -->
+						<div class="special-offer-modal__text">
+							<h6 class="special-offer-modal__title">Get updated information about <span
+									id="modal-form-title">Special offer from Marriott</span></h6>
+							<div class="special-offer-modal__desc">By downloading the document, you will
+								receive:
+							</div>
+							<div class="special-offer-modal__list">
+								<div class="special-offer-modal__item">
+									<div class="special-offer-modal__item-ico">
+										<svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<rect width="10" height="10" rx="5" fill="white" />
+										</svg>
+
+
+									</div>
+									<div class="special-offer-modal__item-desc">About “Platinum Elite” status in
+										Marriott Bonvoy</div>
+								</div>
+								<div class="special-offer-modal__item">
+									<div class="special-offer-modal__item-ico">
+										<svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<rect width="10" height="10" rx="5" fill="white" />
+										</svg>
+
+
+									</div>
+									<div class="special-offer-modal__item-desc">How to get: 50% Bonus Points on
+										Stays, Enhanced Room Upgrade, Including Select Suites, Welcome Gift
+										Choice
+									</div>
+								</div>
+								<div class="special-offer-modal__item">
+									<div class="special-offer-modal__item-ico">
+										<svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<rect width="10" height="10" rx="5" fill="white" />
+										</svg>
+
+
+									</div>
+									<div class="special-offer-modal__item-desc">Explore All Platinum Elite
+										Benefits
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="special-offer-modal__end">
+						<form action="{% url 'form_receiver' %}" method="post" class="special-offer-modal__form"
+							data-gtag-submit="get_pdf">
+							<!-- {% csrf_token %} -->
+							<div class="special-offer-modal__input">
+								<input class="form-control" type="text" name="text" placeholder="Your name" required>
+							</div>
+							<div class="special-offer-modal__input">
+								<input class="form-control" type="email" name="email" placeholder="Your email"
+									pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+							</div>
+							<div class="special-offer-modal__input">
+								<input class="form-control" type="tel" name="phone" placeholder="Phone number"
+									pattern="[+]?[0-9].{8,15}$" required>
+							</div>
+							<!-- <input type="hidden" name="project" value="dubai_hills"> -->
+							<input type="hidden" name="description" value="page_form">
+							<input type="hidden" name="duration" class="duration" value="">
+							<input type="hidden" name="pasted_fields" class="pasted_fields" value="">
+							<input type="hidden" name="language" value="english">
+							<button class="special-offer-modal__btn btn btn-gradient" type="submit">Download
+								file</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- modal thank-you-modal -->
+	<div class="thank-you-modal modal fade" id="thankYouModal" tabindex="-1" aria-labelledby="thankYouModalLabel"
+		aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-md">
+			<div class="modal-content">
+				<button type="button" class="thank-you-modal__close-btn btn" data-bs-dismiss="modal">Close</button>
+				<div class="thank-you-modal__body modal-body">
+					<h5 class="thank-you-modal__title text-gradient">Thank you for your interest</h5>
+					<div class="thank-you-modal__description">We will contact you soon</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- popup modal -->
+	<!-- <div class="popup-modal modal fade" id="popupModal" tabindex="-1" aria-labelledby="popupModalLabel"
+			aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered modal-xl">
+				<div class="modal-content">
+					<button type="button" class="popup-modal__close-btn btn" data-bs-dismiss="modal">Close</button>
+					<div class="popup-modal__body modal-body">
+						<div class="popup-modal__left">
+							<h6 class="popup-modal__left-title">Download brochure in one click</h6>
+							<form action="{% url 'form_receiver' %}" method="post" class="popup-modal__form"
+								data-gtag-submit="popup">
+								<div class="popup-modal__input">
+									<input class="form-control" type="text" name="name" placeholder="Your name"
+										required>
+								</div>
+								<div class="popup-modal__input">
+									<input class="form-control" type="email" name="email" placeholder="Your email"
+										pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+								</div>
+								<div class="popup-modal__input">
+									<input class="form-control" type="tel" name="phone" placeholder="Phone number"
+										pattern="[+]?[0-9].{8,15}$" required>
+								</div>
+								<input type="hidden" name="project" value="dubai_hills">
+								<input type="hidden" name="description" value="page_form">
+								<input type="hidden" name="duration" class="duration" value="">
+								<input type="hidden" name="pasted_fields" class="pasted_fields" value="">
+								<input type="hidden" name="language" value="english">
+								<button class="popup-modal__btn btn btn-gradient" type="submit">Download</button>
+							</form>
+						</div>
+						<div class="popup-modal__right">
+							<h6 class="popup-modal__right-title">Descriptive brochure about all projects within
+								Dubai
+								Hills includes:</h6>
+							<ul class="popup-modal__list">
+								<li><span class="ico"><svg width="15" height="15" viewBox="0 0 18 15" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path d="M2 6.79641L7.45192 12L16 1" stroke="white" stroke-width="3" />
+										</svg></span>Project's photos</li>
+								<li><span class="ico"><svg width="15" height="15" viewBox="0 0 18 15" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path d="M2 6.79641L7.45192 12L16 1" stroke="white" stroke-width="3" />
+										</svg></span>Planned projects of the area</li>
+								<li><span class="ico"><svg width="15" height="15" viewBox="0 0 18 15" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path d="M2 6.79641L7.45192 12L16 1" stroke="white" stroke-width="3" />
+										</svg></span>Lifestyle</li>
+								<li><span class="ico"><svg width="15" height="15" viewBox="0 0 18 15" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path d="M2 6.79641L7.45192 12L16 1" stroke="white" stroke-width="3" />
+										</svg></span>Masterplan</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> -->
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+		integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="js/app.min.js"></script>
+</body>
+
+</html>
